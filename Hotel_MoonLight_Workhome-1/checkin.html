@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--Permite criar layout em grid-->
+    <link rel="stylesheet" href="css/grid.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <!--Usando uam fonte que vem direto do google fonts-->
+
+    <link rel="stylesheet" href="css/ionicons.min.css" >
+    <link href="https://fonts.googleapis.com/css?family=Lato:300i,400" rel="stylesheet">
+</head>
+<body>
+        <header>
+                <nav>
+                    <div class="row">
+                    
+                    <ul class="main-navegation">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="hotel.html">Hotel</a></li>
+                        <li><a href="room.html">Quartos</a></li>
+                        <li><a href="checkin.html">Reservas</a></li>
+                    </ul>
+                    </div>
+                </nav>
+            
+            <div class="main-header-text">
+                <h1>Hotel<br/> Luar Do Sertão</h1>
+                <h3>Seu hotel do sertão</h2>
+            </div>
+            </header>
+        <section class="section-checkin">
+                <div class="row">
+                        <h2>Preencha o formulário</h2>
+                    </div>
+                    <div class="row">
+                        <form method="GET" action="checkin.html" class="contact-form">
+                            <div class="row">
+                                <div class="col span-1-of-3">
+                                    <label for="name">Nome</label>
+                                </div>
+                                <div class="col span-2-of-3">
+                                    <input type="text" name="name" id="name" placeholder="Nome..." reset required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col span-1-of-3">
+                                        <label for="name">CPF</label>
+                                    </div>
+                                    <div class="col span-2-of-3">
+                                        <input type="number" name="cpf" id="cpf" placeholder="CPF..." reset required size="11">
+                                    </div>
+                                </div>
+                            <div class="row">
+                                <div class="col span-1-of-3">
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="col span-2-of-3">
+                                    <input type="email" name="email" id="email" placeholder="Your email" reset required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col span-1-of-3">
+                                    <label for="find-us">Número de pessoas</label>
+                                </div>
+                                <div class="col span-2-of-3">
+                                    <select name="number_of_people" id="number_of_people">
+                                        <option value="min" selected>1</option>
+                                        <option value="number2">2</option>
+                                        <option value="number3">3</option>
+                                        <option value="max">4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col span-1-of-3">
+                                    <label>Suíte</label>
+                                </div>
+                                <div class="col span-2-of-3">
+                                        <select name="room" id="room">
+                                                <option value="luxo" selected>Luxo</option>
+                                                <option value="premium">Premium </option>
+                                                <option value="presidencial">Presidencial</option>
+                                        </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col span-1-of-3">
+                                        <label>Forma pagamento</label>
+                                    </div>
+                                    <div class="col span-2-of-3">
+                                            <select name="payform" id="payform">
+                                                    <option value="creditcard" selected>Cartão de crédito</option>
+                                                    <option value="debit">Débito</option>
+                                                    <option value="money">Dinheiro</option>
+                                            </select>
+                                    </div>
+                                </div>
+                           
+                            <div class="row">
+                            <div class="col span-1-of-3">
+                                    <label>&nbsp;</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="submit" value="Fazer pedido" class="btn btn-ghost">
+                            </div>
+                        </div>        
+                    </form>  
+                </div>
+        </section>
+        <footer class="section-footer">
+                <div class="row">
+                    <div class="col span-1-of-4">
+                        <div>
+                            <i class="ion-ios-locate  icon-small"> </i>
+                            Quixadá centro
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="col span-1-of-4">
+                            <i class="ion-ios-call  icon-small"></i>
+                            (88)998544534
+                            
+                    </div>
+                    
+                    <div class="col span-1-of-4">
+                       <i class="ion-ios-mail icon-small"></i>
+                       <a href="#" id="my-email">luardosertao@suporte.com.br</a>
+                    </div>
+                    
+                    <div class="col span-1-of-4">
+                            <i class="ion-ios-person icon-small"></i>
+                            João Igor Matos da Silva
+                    </div>
+        
+                </div>
+        
+            </footer>
+</body>
+</html>

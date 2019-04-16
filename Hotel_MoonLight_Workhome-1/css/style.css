@@ -1,0 +1,356 @@
+/*******Basic Setup******/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    color: #555;
+    font-family:  'sans-serif';
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix{
+    zoom: 1;
+}
+.clearfix::after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+/************************/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/*******TEXT-SECTION******************/
+header{
+    background-image: linear-gradient(rgba(29, 29, 29, 0.7),rgba(29, 29, 29, 0.7)), url(img/logo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    background-attachment: fixed;
+    width: 100%;
+}
+.main-header-text{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+}
+/*********/
+h1,h2{
+    font-weight: 300;
+    text-transform: uppercase;
+}
+h1{
+    margin-bottom: 15px;
+    font-size: 240%;
+    color: #fff;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+h2{
+    margin-bottom:30px;
+    font-size: 180%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    text-align: center;  
+}
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+h2::after{
+    display: block;
+    height: 2px;
+    content: " ";
+    background: #e67e22;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.main-header-text h3{
+    font-size: 100%;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    color: #e67e22;
+    margin-top: -10px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+/**********END-TEXT-SECTION****************/
+
+/**********************LINKS***********************************/
+a:link,a:visited{
+
+    color: #e67e22;
+    text-decoration: none;
+    padding: 1px;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.2s,color 0.2s;
+}
+a:hover, a:active{
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
+/**********************END-LINKS*****************************/
+/******************MENU-SECTION*********************/
+.main-navegation{
+    float: right;
+    margin-top: 60px;
+}
+.main-navegation li{
+    display: inline-block;
+    margin-left: 40px;
+    text-decoration: none;
+
+}
+.main-navegation li a:link,.main-navegation li a:visited{
+    color: #fff;
+    padding: 8px 0;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+.main-navegation li a:hover, .main-navegation li a:active{
+    color: #555;
+    border-bottom: 2px solid #e67e22;
+}
+
+/*************END-MENU-SECTION*********************/
+section{
+    padding: 50px 0;
+}
+
+/******************PARAGRAMPHS*****************************/
+
+.text-description{
+    line-height: 145%;
+    width: 70%;
+    margin-left:15%; 
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.justify{
+    text-align: justify;
+}
+
+
+
+/**********************END-PARAGRAMPHS***************************/
+
+/****************SECTION APPELINGS*********************/
+.section-appelings{
+    padding: 0;
+}
+.appelings{
+    list-style: none;
+    width: 100%;
+}
+
+.appelings li{
+    float: left;
+    display: block;
+    width: 33.3%;
+
+}
+.appelings-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.appelings-photo img{
+    opacity: 0.5;
+    width: 100%;
+    transform: scale(1.25);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+
+
+.appelings:last-child{
+    margin-bottom: 30px;
+}
+.descriptionn-photo{
+    display: none;
+   
+}
+.appelings-content{
+    position: relative;
+}
+
+.appelings-content:hover > .descriptionn-photo{
+    display: inline-block;
+    position: absolute;
+    transform: translate(0,-100%);
+    padding-left: 5px; 
+    text-align: justify;
+    color: #000;
+    background-color: rgba(255, 250, 250, 0.349);
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 80%;
+    font-weight: 400;
+    line-height: 105%;
+      
+    letter-spacing: 2px;
+}
+
+.appelings-content:hover > .appelings-photo > img{
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+.section-footer{
+   
+    font-size: 90%;
+    
+}
+
+/*HOTEL PART*/
+.section-hangout-room{
+    padding: 0;
+}
+/* Buttons*/
+.btn:link,.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+    transition: background-color 0.9s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,.btn-full:visited{
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    margin-right: 15px;
+}
+.btn-ghost:link,.btn-ghost:visited{
+    border: 1px solid #e67e22;
+    color:#e67e22;
+}
+
+.btn:hover,.btn:active{
+    background-color: #cf6d17;
+}
+.btn-full:hover,.btn-full:active{
+
+    border: 1px solid #e67e22
+
+}
+.btn-ghost:hover,.btn-ghost:active{
+    border: 1px solid #e67e22;
+    color:#fff;
+}
+
+/*Room*/
+.section-plans{
+    background-color: #f4f4f4;
+}
+.plan-box{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #efefef;
+}
+.plan-box div{
+    padding: 15px;
+    border: 1px solid rgb(230, 227, 227);
+}
+.plan-price{
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100%;
+    color: #e67e22;
+}
+.plan-price span{
+    font-size: 20%;
+    font-weight: 300;
+}
+
+.plan-box ul{
+    list-style: none;
+}
+.plan-box ul li{
+    padding: 5px 0;
+}
+.plan-box div:first-child{
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px; 
+    border-bottom-right-radius: 5px; 
+}
+
+/*center the buttons*/
+.plan-box div:last-child{
+    text-align: center;
+    border: none;
+}
+
+/*ICONS*/
+.icon-small{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 90%;
+    line-height: 100%;
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+
+
+/* ----------------------------------------------- */
+/* FORM */
+/* ----------------------------------------------- */
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,input[type=number],
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+input[type=submit]{
+    width: 50%;
+    padding: 7px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {outline: none;}
